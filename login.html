@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient's records</title>
+</head>
+<body>
+    <h1>Patient Records</h1>
+    <p>Kindly fill in the details below:</p>
+
+  <form action="process.php" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" name="name" id="first-name" placeholder="Enter your first name" required>
+    <br><br>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+    <br><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+    <option value="">Select</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+    </select>
+    <br><br>
+
+    <label for="email">E-mail address:</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+    <br><br>
+
+    <label for="IDnum">ID number:</label>
+    <input type="text" name="IDnum" id="IDnum" placeholder="Enter your ID number" required>
+    <br><br>
+
+    <label for="phonenum">Phone number:</label>
+    <input type="text" name="phonenum" id="phonenum" placeholder="Enter your phone number" required>
+    <br><br>
+
+    <label for="insurance">Do you have an insurance?</label>
+            <label>
+            <input type="checkbox" name="yesCheckbox">
+            Yes
+            </label>
+
+             <label>
+             <input type="checkbox" name="noCheckbox">
+            No
+            </label>
+
+            <br><br>
+
+    <input type="submit" value="Submit" name = "register" id="register_patient">
+  </form>
+
+</body>
+</html>
